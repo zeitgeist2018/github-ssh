@@ -14,6 +14,7 @@ cat <<EOF >> ~/.ssh/config
 EOF
 
 ```
-`ssh-add -K ~/.ssh/id_rsa`
+`ssh-add -K ~/.ssh/github`
+
 4. Copy generated key to clipboard: `pbcopy < ~/.ssh/github.pub`
 5. Navigate to https://github.com/settings/ssh/new and add a title and the key itself.
