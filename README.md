@@ -4,7 +4,7 @@ Steps to add an ssh key to github on Mac OS.
 # Steps
 1. Generate ssh key in your computer: `ssh-keygen -t rsa -b 4096 -f ~/.ssh/github -q -N ""`
 2. Start ssh agent in the background: `eval "$(ssh-agent -s)"`
-3. Add key to ssh agent and MacOS keychain:
+3. Add key to ssh agent and MacOS keychain (If you're using Ubuntu, add it to `/etc/ssh/ssh_config` instead):
 ```
 cat <<EOF >> ~/.ssh/config     
   Host *
